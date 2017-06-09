@@ -28,13 +28,13 @@ else:
     django = 'Django >= 1.8.5, < 1.9'
 
 setup(
-    name="django-sayit",
-    version='1.4.1',
+    name="hasadna-sayit",
+    version='0.0.1',
     description='A data store for speeches and transcripts to make them searchable and pretty.',
     long_description=read_file('README.rst'),
-    author='mySociety',
-    author_email='sayit@mysociety.org',
-    url='https://github.com/mysociety/sayit',
+    author='Hasadna',
+    author_email='info@hasadna.org.il',
+    url='https://github.com/hasadna/sayit',
     packages=find_packages(exclude=('example_project', 'example_project.*')),
     include_package_data=True,
     install_requires=[
