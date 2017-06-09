@@ -38,7 +38,7 @@ setup(
     packages=find_packages(exclude=('example_project', 'example_project.*')),
     include_package_data=True,
     dependency_links=[
-        'git://github.com/hasadna/django-annotatetext.git@72e1e69459b1efe3efad85eec1dd162f5ab03250#egg=django-annotatetext'
+        'git://github.com/hasadna/django-annotatetext.git@7c161ae36f6ae1c5a4bc9297514562f9d3c2b99e#egg=django-annotatetext'
     ],
     install_requires=[
         'psycopg2 >= 2.5.1, < 2.6',
