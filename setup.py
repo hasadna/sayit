@@ -55,6 +55,7 @@ setup(
         'django-subdomain-instances >= 1.0',
         'easy-thumbnails >= 2.1',
         'unicode-slugify == 0.1.1',
+        'datapackage >= 0.8.9',
         'django-annotatetext'
     ] + ssl,
     extras_require={
