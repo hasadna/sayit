@@ -1,6 +1,7 @@
 import re
 import sys
 
+import debug_toolbar
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import include, url
@@ -36,4 +37,5 @@ urlpatterns += [
     url(r'^accounts/logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
 
     url(r'^', include('speeches.urls', app_name='speeches', namespace='speeches')),
+    url(r'^__debug__/', include(debug_toolbar.urls)),
 ]
