@@ -25,9 +25,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sayit-example-project',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'sayit',
+        'USER': 'sayit',
+        'PASSWORD': 'sayit',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -35,13 +35,13 @@ DATABASES = {
 
 ALLOWED_HOSTS = []
 
-SECRET_KEY = 'secret'
+SECRET_KEY = 'o7szpe5auauzhf27^c9s8480o0lcrvob+t5njm@@=q2g0k*a(h'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'Europe/London'
+TIME_ZONE = 'Asia/Jerusalem'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -100,12 +100,12 @@ if DEBUG_TOOLBAR:
 
 INTERNAL_IPS = ('127.0.0.1',)
 
-ROOT_URLCONF = 'example_project.urls'
+ROOT_URLCONF = 'hasadna_sayit.urls'
 
 LOGIN_REDIRECT_URL = '/'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'example_project.wsgi.application'
+WSGI_APPLICATION = 'hasadna_sayit.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".

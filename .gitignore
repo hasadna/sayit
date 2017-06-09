@@ -2,7 +2,7 @@
 .sass-cache
 .tox
 /speeches/static/speeches/sass/*.css
-/example_project/settings/local.py
+/hasadna_sayit/settings/local.py
 .apdisk
 .DS_Store
 chromedriver.log
