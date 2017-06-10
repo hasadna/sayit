@@ -3,6 +3,8 @@ import json
 import re
 import requests
 from mock import patch
+from speeches.importers.import_datapackage import ImportDatapackage
+import logging
 
 from speeches.tests import InstanceTestCase
 from speeches.models import Speech, Speaker, Section
@@ -388,3 +390,17 @@ class PopoloImportViewsTestCase(InstanceTestCase):
             0,
             )
         self.assertContains(resp, 'No speakers found')
+
+class DatapackageImportTestCase(InstanceTestCase):
+    def setUp(self):
+        super(DatapackageImportTestCase, self).setUp()
+        self.importer = ImportDatapackage(instance=self.instance, commit=True)
+
+    def test_import_persons(self):
+        dp = self.importer.import_document('speeches/media/datapackage/datapackage.json')
+        self.importer.get_persons_data(dp)
+
+        person = Speaker.objects.get(id=1)
+        self.assertEqual(person.given_name, u'וילמה', 'name is %s' % person.name)
+
+
