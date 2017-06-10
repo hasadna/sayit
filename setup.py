@@ -37,10 +37,8 @@ setup(
     url='https://github.com/hasadna/sayit',
     packages=find_packages(exclude=('example_project', 'example_project.*')),
     include_package_data=True,
-    dependency_links=[
-        'git://github.com/hasadna/django-annotatetext.git@7c161ae36f6ae1c5a4bc9297514562f9d3c2b99e#egg=django-annotatetext'
-    ],
     install_requires=[
+        'datapackage == 0.8.9',
         'psycopg2 >= 2.5.1, < 2.6',
         'pytz >= 2013d',
         'six >= 1.4.1',
@@ -55,8 +53,6 @@ setup(
         'django-subdomain-instances >= 1.0',
         'easy-thumbnails >= 2.1',
         'unicode-slugify == 0.1.1',
-        'datapackage >= 0.8.9',
-        'django-annotatetext'
     ] + ssl,
     extras_require={
         'test': [
