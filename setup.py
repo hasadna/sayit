@@ -38,6 +38,7 @@ setup(
     packages=find_packages(exclude=('example_project', 'example_project.*')),
     include_package_data=True,
     install_requires=[
+        'datapackage == 0.8.9',
         'psycopg2 >= 2.5.1, < 2.6',
         'pytz >= 2013d',
         'six >= 1.4.1',
