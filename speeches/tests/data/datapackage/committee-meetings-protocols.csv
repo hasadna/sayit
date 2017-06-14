@@ -1,0 +1,7 @@
+committee_id,meeting_id,text,parts,original,scraper_errors
+3,2017185,committee_3/2017185_2017-06-05_11-00-00/protocol.txt,committee_3/2017185_2017-06-05_11-00-00/protocol.csv,committee_3/2017185_2017-06-05_11-00-00/original.doc,
+3,2017183,committee_3/2017183_2017-06-05_09-30-00/protocol.txt,committee_3/2017183_2017-06-05_09-30-00/protocol.csv,committee_3/2017183_2017-06-05_09-30-00/original.doc,
+4,2016516,committee_4/2016516_2017-06-05_09-00-00/protocol.txt,committee_4/2016516_2017-06-05_09-00-00/protocol.csv,committee_4/2016516_2017-06-05_09-00-00/original.doc,
+5,2017192,committee_5/2017192_2017-06-06_09-00-00/protocol.txt,committee_5/2017192_2017-06-06_09-00-00/protocol.csv,committee_5/2017192_2017-06-06_09-00-00/original.doc,
+6,2017631,committee_6/2017631_2017-06-05_12-00-00/protocol.txt,committee_6/2017631_2017-06-05_12-00-00/protocol.csv,committee_6/2017631_2017-06-05_12-00-00/original.doc,
+28,2017694,committee_28/2017694_2017-06-06_09-30-00/protocol.txt,committee_28/2017694_2017-06-06_09-30-00/protocol.csv,committee_28/2017694_2017-06-06_09-30-00/original.doc,

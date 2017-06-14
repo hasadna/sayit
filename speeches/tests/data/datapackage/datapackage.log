@@ -1,0 +1,158 @@
+root:62	INFO	using proxies: {'http': 'socks5://localhost:8123'}
+knesset_datapackage.root:417	INFO	making datapackage: "knesset-data", base path: "/home/travis/build/hasadna/knesset-data-datapackage/data/datapackage"
+knesset_datapackage.root:420	INFO	making resources
+knesset_datapackage.resources.committees:75	INFO	processing datapackage resource 'committees'
+knesset_datapackage.resources.committees:37	INFO	fetching active committees
+knesset_datapackage.resources.committees:75	INFO	processing datapackage resource 'committee-meetings'
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 1
+knesset_datapackage.resources.committees:75	INFO	processing datapackage resource 'committee-meetings-protocols'
+knesset_datapackage.resources.committees:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/committee-meetings.csv
+knesset_datapackage.resources.committees:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/committees.csv
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 2
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 3
+knesset_datapackage.resources.committees:111	INFO	appending committee meeting protocols for committe 3 meeting 2017185
+knesset_datapackage.resources.committees:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/committee-meetings-protocols.csv
+knesset_datapackage.resources.committees:111	INFO	appending committee meeting protocols for committe 3 meeting 2017183
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 4
+knesset_datapackage.resources.committees:111	INFO	appending committee meeting protocols for committe 4 meeting 2016516
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 5
+knesset_datapackage.resources.committees:111	INFO	appending committee meeting protocols for committe 5 meeting 2017192
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 6
+knesset_datapackage.resources.committees:111	INFO	appending committee meeting protocols for committe 6 meeting 2017631
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 8
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 10
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 11
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 12
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 13
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 14
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 19
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 25
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 27
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 28
+knesset_datapackage.resources.committees:111	INFO	appending committee meeting protocols for committe 28 meeting 2017694
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 29
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 43
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 59
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 78
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 87
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 196
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 209
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 215
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 249
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 288
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 308
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 312
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 331
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 335
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 499
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 500
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 501
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 503
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 510
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 516
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 520
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 525
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 527
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 528
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 537
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 538
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 540
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 541
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 542
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 543
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 544
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 545
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 546
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 548
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 554
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 559
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 561
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 562
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 565
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 569
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 570
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 571
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 572
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 573
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 575
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 576
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 577
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 578
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 579
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 580
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 581
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 582
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 583
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 584
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 587
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 591
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 593
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 594
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 597
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 598
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 599
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 602
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 604
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 605
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 606
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 607
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 608
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 609
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 610
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 611
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 612
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 613
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 614
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 615
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 616
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 617
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 618
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 619
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 620
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 622
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 623
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 624
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 625
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 626
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 627
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 628
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 629
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 630
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 631
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 632
+knesset_datapackage.resources.committees:68	INFO	appending committee meetings since 2017-06-03 for committee 633
+knesset_datapackage.resources.members:75	INFO	processing datapackage resource 'members'
+knesset_datapackage.resources.members:97	INFO	fetching all members
+knesset_datapackage.resources.members:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/members.csv
+knesset_datapackage.resources.plenum:75	INFO	processing datapackage resource 'plenum-meetings'
+knesset_data.html_scrapers.plenum:35	INFO	getting index page html from http://www.knesset.gov.il/plenum/heb/display_full.asp
+knesset_datapackage.root:427	ERROR	got an exception in plenum-meetings resource: seems you are blocked by Knesset reblaze, sorry
+knesset_datapackage.root:428	ERROR	seems you are blocked by Knesset reblaze, sorry
+Traceback (most recent call last):
+  File "/home/travis/virtualenv/python2.7.12/lib/python2.7/site-packages/knesset_datapackage/base.py", line 424, in make
+    resource.make(**kwargs)
+  File "/home/travis/virtualenv/python2.7.12/lib/python2.7/site-packages/knesset_datapackage/base.py", line 193, in make
+    for row in self.fetch(**kwargs):
+  File "/home/travis/virtualenv/python2.7.12/lib/python2.7/site-packages/knesset_datapackage/base.py", line 199, in fetch
+    for row in self._data_generator(**kwargs):
+  File "/home/travis/virtualenv/python2.7.12/lib/python2.7/site-packages/knesset_datapackage/resources/plenum.py", line 35, in _data_generator
+    for plenum_meeting in self._get_plenum_meetings_instance(**make_kwargs).download(skip_exceptions=make_kwargs.get("skip_exceptions")):
+  File "/home/travis/virtualenv/python2.7.12/src/knesset-data/knesset_data/html_scrapers/plenum.py", line 47, in _download_latest
+    html = self._get_committees_index_page(full)
+  File "/home/travis/virtualenv/python2.7.12/src/knesset-data/knesset_data/html_scrapers/plenum.py", line 37, in _get_committees_index_page
+    is_reblaze_content(content, raise_exception=True)
+  File "/home/travis/virtualenv/python2.7.12/src/knesset-data/knesset_data/utils/reblaze.py", line 4, in is_reblaze_content
+    raise Exception("seems you are blocked by Knesset reblaze, sorry")
+Exception: seems you are blocked by Knesset reblaze, sorry
+knesset_datapackage.resources.persons:75	INFO	processing datapackage resource 'persons-person'
+knesset_datapackage.resources.persons:97	INFO	fetching all persons
+knesset_datapackage.resources.persons:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/persons-person.csv
+knesset_datapackage.resources.persons:75	INFO	processing datapackage resource 'persons-position'
+knesset_datapackage.resources.persons:97	INFO	fetching all positions
+knesset_datapackage.resources.persons:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/persons-position.csv
+knesset_datapackage.resources.persons:75	INFO	processing datapackage resource 'persons-persons-to-positions'
+knesset_datapackage.resources.persons:97	INFO	fetching all person_to_positions
+knesset_datapackage.resources.persons:165	INFO	writing csv resource to: /home/travis/build/hasadna/knesset-data-datapackage/data/datapackage/persons-persons-to-positions.csv
+knesset_datapackage.root:432	INFO	writing datapackage.json
+knesset_datapackage.root:435	INFO	done
+root:80	INFO	creating datapackage.zip

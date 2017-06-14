@@ -4,8 +4,6 @@ import re
 import requests
 from mock import patch
 from speeches.importers.import_datapackage import ImportDatapackage
-import logging
-
 from speeches.tests import InstanceTestCase
 from speeches.models import Speech, Speaker, Section
 from speeches.importers.import_akomantoso import ImportAkomaNtoso
@@ -60,7 +58,7 @@ class AkomaNtosoImportTestCase(InstanceTestCase):
             [u'scene', u'other', u'narrative', u'speech', u'question',
              u'summary', u'speech', u'answer', u'narrative', u'speech',
              u'narrative']
-            )
+        )
 
     def test_already_imported(self):
         self.importer.import_document(
@@ -68,14 +66,14 @@ class AkomaNtosoImportTestCase(InstanceTestCase):
         self.assertEqual(
             self._list_sections(),
             {'This is the title': ['<p>Hello</p>']}
-            )
+        )
 
         ImportAkomaNtoso(instance=self.instance, commit=True, clobber='skip').import_document(
             'speeches/tests/data/fake_http/test_clobber.xml')
         self.assertEqual(
             self._list_sections(),
             {'This is the title': ['<p>Hello</p>']}
-            )
+        )
 
         ImportAkomaNtoso(instance=self.instance, commit=True, clobber='merge').import_document(
             'speeches/tests/data/fake_http/test_clobber.xml')
@@ -216,7 +214,7 @@ class AkomaNtosoImportTestCase(InstanceTestCase):
         self.assertEqual(
             [x.type for x in Speech.objects.all()],
             ['other']
-            )
+        )
 
     def test_blank_speakers(self):
         self.importer.import_document(
@@ -244,7 +242,7 @@ class AkomaNtosoImportTestCase(InstanceTestCase):
             [u'scene', u'other', u'narrative', u'speech', u'question',
              u'summary', u'speech', u'answer', u'narrative', u'speech',
              u'narrative']
-            )
+        )
 
 
 @patch.object(requests, 'get', FakeRequestsOutput)
@@ -259,7 +257,7 @@ class AkomaNtosoImportViewTestCase(InstanceTestCase):
             '/import/akomantoso',
             {'location': 'http://example.com/Debate_Bungeni_1995-10-31.xml'},
             follow=True,
-            )
+        )
 
         # To get us started, let's just check that we get the right kind of
         # speech in the right order.
@@ -268,7 +266,7 @@ class AkomaNtosoImportViewTestCase(InstanceTestCase):
             [u'scene', u'other', u'narrative', u'speech', u'question',
              u'summary', u'speech', u'answer', u'narrative', u'speech',
              u'narrative']
-            )
+        )
 
         self.assertContains(resp, 'Created: 7 speakers, 8 sections, 11 speeches')
 
@@ -278,12 +276,12 @@ class AkomaNtosoImportViewTestCase(InstanceTestCase):
                 '/import/akomantoso',
                 {'location': 'http://example.com/test_clobber.xml', 'existing_sections': 'skip'},
                 follow=True,
-                )
+            )
 
         self.assertEqual(
             [x.type for x in Speech.objects.all()],
             [u'speech', u'speech']
-            )
+        )
 
         self.assertContains(resp, 'Nothing new to import.')
 
@@ -291,7 +289,7 @@ class AkomaNtosoImportViewTestCase(InstanceTestCase):
         resp = self.client.post(
             '/import/akomantoso',
             {'location': 'http://example.com/welsh_assembly/persons'},
-            )
+        )
 
         self.assertContains(resp, 'Sorry - something went wrong with the import')
 
@@ -307,7 +305,7 @@ class PopitImportTestCase(InstanceTestCase):
         self.assertEqual(
             Speaker.objects.filter(instance=popit_importer.instance).count(),
             3,
-            )
+        )
 
 
 @patch.object(requests, 'get', FakeRequestsOutput)
@@ -323,26 +321,26 @@ class PopoloImportTestCase(InstanceTestCase):
     def test_popolo_import_remote_single_json_file(self):
         popolo_importer = PopoloImporter(
             'http://example.com/welsh_assembly.json'
-            )
+        )
         popolo_importer.import_all()
 
         self.assertEqual(
             Speaker.objects.filter(instance=popolo_importer.instance).count(),
             3,
-            )
+        )
 
 
 class PopoloImportFromLocalSourceTestCase(InstanceTestCase):
     def test_import_persons(self):
         popolo_importer = PopoloImporter(
             'speeches/tests/data/fake_http/welsh_assembly.json'
-            )
+        )
         popolo_importer.import_all()
 
         self.assertEqual(
             Speaker.objects.filter(instance=popolo_importer.instance).count(),
             3,
-            )
+        )
 
 
 @patch.object(requests, 'get', FakeRequestsOutput)
@@ -357,12 +355,12 @@ class PopoloImportViewsTestCase(InstanceTestCase):
             '/import/popolo',
             {'location': 'http://example.com/welsh_assembly/persons'},
             follow=True,
-            )
+        )
 
         self.assertEqual(
             Speaker.objects.filter(instance=self.instance).count(),
             3,
-            )
+        )
         self.assertContains(resp, '3 speakers created. 0 speakers refreshed.')
 
         # Repeat the same post
@@ -370,12 +368,12 @@ class PopoloImportViewsTestCase(InstanceTestCase):
             '/import/popolo',
             {'location': 'http://example.com/welsh_assembly/persons'},
             follow=True,
-            )
+        )
 
         self.assertEqual(
             Speaker.objects.filter(instance=self.instance).count(),
             3,
-            )
+        )
         self.assertContains(resp, '0 speakers created. 3 speakers refreshed.')
 
     def test_import_empty(self):
@@ -383,24 +381,35 @@ class PopoloImportViewsTestCase(InstanceTestCase):
             '/import/popolo',
             {'location': 'http://example.com/empty.json'},
             follow=True,
-            )
+        )
 
         self.assertEqual(
             Speaker.objects.filter(instance=self.instance).count(),
             0,
-            )
+        )
         self.assertContains(resp, 'No speakers found')
 
+
 class DatapackageImportTestCase(InstanceTestCase):
+
     def setUp(self):
         super(DatapackageImportTestCase, self).setUp()
         self.importer = ImportDatapackage(instance=self.instance, commit=True)
 
     def test_import_persons(self):
-        dp = self.importer.import_document('speeches/media/datapackage/datapackage.json')
+        dp = self.importer.import_document('speeches/tests/data/datapackage/datapackage.json')
         self.importer.get_persons_data(dp)
 
         person = Speaker.objects.get(id=1)
-        self.assertEqual(person.given_name, u'וילמה', 'name is %s' % person.name)
+        self.assertEqual(person.given_name, 'וילמה', 'name is %s' % person.name)
 
+    def test_import_sections(self):
+        dp = self.importer.import_document('speeches/tests/data/datapackage/datapackage.json')
+        self.importer.get_committee_data(dp)
 
+        committee = Section.objects.filter(session=1).first()
+        subcommittee = Section.objects.filter(session=598).first()
+        meeting = Section.objects.filter(session='2016572').first()
+        self.assertEqual(committee.heading, 'ועדת הכנסת')
+        self.assertIn(subcommittee, committee.children.all())
+        self.assertIn(meeting, committee.children.all())
